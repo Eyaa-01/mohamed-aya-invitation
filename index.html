@@ -361,7 +361,19 @@ document.querySelector('.open-btn').addEventListener('click', () => {
       text-align:center;
     }
 
-    .footer{
+    .footer <section class="ending-photo">
+
+    <img src="images/ending-photo.jpg" alt="Mohamed and Aya">
+
+    <div class="ending-overlay"></div>
+
+    <div class="ending-text">
+        <h2>Mohamed & Aya</h2>
+        <p>Thank you for celebrating with us</p>
+    </div>
+
+</section>
+  {
       padding:80px 22px;
       background:var(--espresso);
       color:var(--ivory);
@@ -413,6 +425,48 @@ document.querySelector('.open-btn').addEventListener('click', () => {
       .script{font-size:62px}
       section{padding:86px 18px}
     }
+.ending-photo{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.ending-photo img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    top:0;
+    left:0;
+}
+
+.ending-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(20,15,12,0.35);
+}
+
+.ending-text{
+    position:relative;
+    z-index:2;
+    color:white;
+}
+
+.ending-text h2{
+    font-family:'Great Vibes',cursive;
+    font-size:90px;
+    margin-bottom:20px;
+}
+
+.ending-text p{
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:14px;
+}
   </style>
 </head>
 
